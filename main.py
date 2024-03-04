@@ -53,7 +53,3 @@ while True:
 
     if pressed_key[pg.K_d]:
         player1_rect.centerx += 1
-
-    if pressed_key[pg.K_SPACE]:
-        pg.mixer_music.load('./sounds/chavinho.mp3')
-        pg.mixer_music.play()
