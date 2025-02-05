@@ -1,8 +1,8 @@
 import pytest
 import pygame as pg
 
-# Configuração para rodar o Pygame em modo headless (sem exibir janela)
-pg.display.init()
+# Inicializa o Pygame antes de tudo
+pg.init()
 pg.display.set_mode((800, 600))
 
 
