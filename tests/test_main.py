@@ -37,7 +37,7 @@ def test_player_movement():
 
     # Aplica o movimento com base nas teclas pressionadas
     if keys[pg.K_w]:
-        player_rect.y -= 1  # Move para cima
+        player_rect.y -= 2  # Move para cima
     if keys[pg.K_s]:
         player_rect.y += 1  # Move para baixo
     if keys[pg.K_a]:
