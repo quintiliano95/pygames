@@ -37,16 +37,16 @@ def test_player_movement():
 
     # Aplica o movimento com base nas teclas pressionadas
     if keys[pg.K_w]:
-        player_rect.centery -= 1
+        player_rect.y -= 1  # Move para cima
     if keys[pg.K_s]:
-        player_rect.centery += 1
+        player_rect.y += 1  # Move para baixo
     if keys[pg.K_a]:
-        player_rect.centerx -= 1
+        player_rect.x -= 1  # Move para a esquerda
     if keys[pg.K_d]:
-        player_rect.centerx += 1
+        player_rect.x += 1  # Move para a direita
 
-    assert player_rect.centerx == 101  # Moveu para direita
-    assert player_rect.centery == 99   # Moveu para cima
+    assert player_rect.x == 101  # Moveu para a direita corretamente
+    assert player_rect.y == 99   # Moveu para cima corretamente
 
 
 def test_quit_event():
