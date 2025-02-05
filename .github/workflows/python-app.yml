@@ -5,8 +5,7 @@ name: Python application
 
 on:
   push:
-    paths:
-      - 'tests/'
+    branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
